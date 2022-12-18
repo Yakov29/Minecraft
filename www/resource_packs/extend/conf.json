@@ -1,0 +1,12 @@
+{
+    "id": "extend",
+    "shader": {
+        "extends": "base"
+    },
+    "textures": {
+        "effects": {
+            "image": "/textures/effects.png",
+            "tx_cnt": 8
+        }
+    }
+}

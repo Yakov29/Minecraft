@@ -1,0 +1,185 @@
+[
+    {
+        "id": 2,
+        "name": "GRASS_BLOCK",
+        "texture": {
+            "up": [0, 16],
+            "down": [2, 0],
+            "side": [2, 16]
+        }
+    },
+    {
+        "id": 31,
+        "name": "GRASS",
+        "texture": [4, 16]
+    },
+    {
+        "id": 56,
+        "name": "DIAMOND_ORE",
+        "texture": [2, 3]
+    },
+    {
+        "id": 106,
+        "name": "VINE",
+        "texture": {
+            "south": [6, 16],
+            "side": [6, 16]
+        }
+    },
+    {
+        "id": 162,
+        "name": "BIRCH_LOG",
+        "texture": {
+            "up": [20, 17],
+            "down": [20, 17],
+            "side": [20, 16]
+        }
+    },
+    {
+        "id": 3,
+        "name": "OAK_LOG",
+        "texture": {
+            "up": [21, 17],
+            "down": [21, 17],
+            "side": [21, 16]
+        }
+    },
+    {
+        "id": 165,
+        "name": "ACACIA_LOG",
+        "texture": {
+            "up": [22, 17],
+            "down": [22, 17],
+            "side": [22, 16]
+        }
+    },
+    {
+        "id": 138,
+        "name": "SPRUCE_LOG",
+        "texture": {
+            "up": [23, 17],
+            "down": [23, 17],
+            "side": [23, 16]
+        }
+    },
+    {
+        "id": 233,
+        "name": "OAK_LEAVES",
+        "texture": [10, 19]
+    },
+    {
+        "id": 220,
+        "name": "ACACIA_LEAVES",
+        "texture": [10, 20]
+    },
+    {
+        "id": 190,
+        "name": "SPRUCE_LEAVES",
+        "texture": [10, 21]
+    },
+
+    {"id": 456, "name": "BIRCH_PLANKS", "texture": [20, 19]},
+    {"id": 7, "name": "OAK_PLANKS", "texture": [21, 19]},
+    {"id": 457, "name": "ACACIA_PLANKS", "texture": [22, 19]},
+    {"id": 460, "name": "SPRUCE_PLANKS", "texture": [23, 19]},
+
+    {"id": 458, "name": "BIRCH_SLAB", "texture": [20, 19]},
+    {"id": 126, "name": "OAK_SLAB", "texture": [21, 19]},
+    {"id": 459, "name": "ACACIA_SLAB", "texture": [22, 19]},
+    {"id": 461, "name": "SPRUCE_SLAB", "texture": [23, 19]},
+    {"id": 501, "name": "BRICK_SLAB", "texture": [7, 0]},
+
+    {"id": 1, "name": "BEDROCK","texture": [1, 1]},
+    {"id": 8, "name": "COBBLESTONE", "texture": [0, 1]},
+    {"id": 9, "name": "STONE", "texture": [1, 0]},
+    {"id": 10, "name": "BRICKS", "texture": [7, 0]},
+    {"id": 11, "name": "SAND", "texture": [2, 1]},
+    {"id": 12, "name": "GRAVEL", "texture": [3, 1]},
+    {"id": 15, "name": "IRON_ORE", "texture": [1, 2]},
+    {"id": 16, "name": "COAL_ORE", "texture": [2, 2]},
+    {"id": 14, "name": "GOLD_ORE", "texture": [0, 2]},
+    {"id": 189, "name": "BIRCH_FENCE", "texture": [20, 19]},
+    {"id": 85, "name": "OAK_FENCE", "texture": [21, 19]},
+    {"id": 188, "name": "ACACIA_FENCE", "texture": [22, 19]},
+    {"id": 191, "name": "SPRUCE_FENCE", "texture": [23, 19]},
+    {"id": 108, "name": "BRICK_STAIRS", "texture": [7, 0]},
+    {"id": 135, "name": "BIRCH_STAIRS", "texture": [20, 19]},
+    {"id": 53, "name": "OAK_STAIRS", "texture": [21, 19]},
+    {"id": 163, "name": "ACACIA_STAIRS", "texture": [22, 19]},
+    {"id": 134, "name": "SPRUCE_STAIRS", "texture": [23, 19]},
+    {"id": 4, "name": "TNT", 
+        "texture": {
+            "up": [9, 0],
+            "down": [10, 0],
+            "side": [8, 0]
+        }
+    },
+    {"id": 5, "name": "BOOKSHELF",
+        "texture": {
+            "up": [21, 19],
+            "down": [21, 19],
+            "side": [3, 2]
+        }
+    },
+    {"id": 80, "name": "POWDER_SNOW", "texture": [2, 4]},
+    {"id": 145, "name": "SNOW_DIRT",
+        "texture": {
+            "up": [2, 4],
+            "down": [2, 0],
+            "side": [4, 4]
+        }
+    },
+    {"id": 98, "name": "STONE_BRICKS", "texture": [6, 3]},
+    {"id": 39, "name": "BROWN_MUSHROOM", "texture": [13, 1]},
+    {"id": 40, "name": "RED_MUSHROOM", "texture": [12, 1]},
+    {"id": 38, "name": "RED_TULIP", "texture": [12, 0]},
+    {"id": 36, "name": "DANDELION", "texture": [13, 0]},
+    {"id": 79, "name": "ICE", "texture": [3, 4]},
+    {"id": 109, "name": "STONE_STAIRS", "texture": [1, 0]},
+    {"id": 67, "name": "COBBLESTONE_STAIRS", "texture": [0, 1]},
+    {"id": 61, "name": "FURNACE",
+        "texture": {
+            "up": [14, 3],
+            "down": [14, 3],
+            "north": [12, 2],
+            "north_on": [14, 2],
+            "side": [13, 2]
+        }
+    },
+    {"id": 606, "name": "WOODEN_SWORD",
+        "texture": {
+            "id": "default",
+            "side": [0, 1]
+        }
+    },
+    {"id": 607, "name": "STONE_SWORD",
+        "texture": {
+            "id": "default",
+            "side": [1, 1]
+        }
+    },
+    {"id": 608, "name": "IRON_SWORD",
+        "texture": {
+            "id": "default",
+            "side": [2, 1]
+        }
+    },
+    {"id": 609, "name": "GOLDEN_SWORD",
+        "texture": {
+            "id": "default",
+            "side": [3, 1]
+        }
+    },
+    {"id": 610, "name": "DIAMOND_SWORD",
+        "texture": {
+            "id": "default",
+            "side": [4, 1]
+        }
+    },
+    {"id": 611, "name": "NETHERITE_SWORD",
+        "texture": {
+            "id": "default",
+            "side": [5, 1]
+        }
+    }
+]
