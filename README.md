@@ -1,176 +1,85 @@
-# MadCraft
-Minecraft clone on JS
+# Crafatar
+<img alt="logo" src="lib/public/logo.png" align="right" width="128px" height="128px">
 
-- Demo: https://madcraft.io/
-- Discord: https://discord.gg/QQw2zadu3T
-- Youtube: https://www.youtube.com/channel/UCAcOZMpzYE8rk62giMgTwdw/videos
-- Reddit: https://www.reddit.com/r/madcraft/
+[![travis](https://img.shields.io/travis/crafatar/crafatar/master.svg?style=flat-square)](https://travis-ci.org/crafatar/crafatar/) [![Coverage Status](https://img.shields.io/coveralls/crafatar/crafatar.svg?style=flat-square)](https://coveralls.io/r/crafatar/crafatar) [![Code Climate](https://img.shields.io/codeclimate/github/crafatar/crafatar.svg?style=flat-square)](https://codeclimate.com/github/crafatar/crafatar) [![dependency status](https://img.shields.io/david/crafatar/crafatar.svg?style=flat-square)](https://david-dm.org/crafatar/crafatar) [![devDependency status](https://img.shields.io/david/dev/crafatar/crafatar.svg?style=flat-square)](https://david-dm.org/crafatar/crafatar#info=devDependencies) [![docs status](https://inch-ci.org/github/crafatar/crafatar.svg?branch=master&style=flat-square)](https://inch-ci.org/github/crafatar/crafatar)
 
-## Third Party
-+ [XM player](https://github.com/a1k0n/jsxm/)
+<a href="https://crafatar.com">Crafatar</a> serves Minecraft avatars based on the skin for use in external applications.
+Inspired by <a href="https://gravatar.com">Gravatar</a> (hence the name) and <a href="https://minotar.net">Minotar</a>.
 
-## Run and play
+Image manipulation is done by [lwip](https://github.com/EyalAr/lwip). 3D renders are created with [node-canvas](https://github.com/Automattic/node-canvas) / [cairo](http://cairographics.org/).
 
-Compilate texture pack. It require for first run the game, because textures not included in repo.
-For example you can download this texture pack from https://polyflore.net/projects/depixel
-```
-1. extract resource pack to directory ../resource-packs/1 (one level up from project root directory)
-2. cd ./node_server
-3. npm install
-4. npm run compile-texture-pack
-```
+# Contributions welcome!
 
-Start server:
-```
-// Run NodeJS v17.9.0 server!
-cd ./node_server
-npm run install
-npm run start
+There are usually a few [open issues](https://github.com/crafatar/crafatar/issues).  
+We welcome any opinions or advice in discussions as well as pull requests.  
+Issues tagged with [![help wanted](https://i.imgur.com/kkozGKY.png "help wanted")](https://github.com/crafatar/crafatar/labels/help%20wanted) show where we could especially need your help!
 
-# compile all include local server if need
-npm run install-all
+# Examples
 
-# compile ff-worker and auto start
-npm run start-rebuild
-```
+| | | | |
+| :---: | :---: | :---: | :---: |
+| ![jomo's avatar](https://crafatar.com/avatars/ae795aa86327408e92ab25c8a59f3ba1?size=128) | ![Jake_0's avatar](https://crafatar.com/avatars/2d5aa9cdaeb049189930461fc9b91cc5?size=128) | ![Notch's avatar](https://crafatar.com/avatars/069a79f444e94726a5befca90e38aaf5?size=128) | ![sk89q's avatar](https://crafatar.com/avatars/0ea8eca3dbf647cc9d1ac64551ca975c?size=128) | ![md_5's avatar](https://crafatar.com/avatars/af74a02d19cb445bb07f6866a861f783?size=128) |
+| ![jomo's 3d head](https://crafatar.com/renders/head/ae795aa86327408e92ab25c8a59f3ba1?scale=6) | ![Jake_0's 3d head](https://crafatar.com/renders/head/2d5aa9cdaeb049189930461fc9b91cc5?scale=6) | ![Notch's 3d head](https://crafatar.com/renders/head/069a79f444e94726a5befca90e38aaf5?scale=6) | ![sk89q's 3d head](https://crafatar.com/renders/head/0ea8eca3dbf647cc9d1ac64551ca975c?scale=6) | ![md_5's 3d head](https://crafatar.com/renders/head/af74a02d19cb445bb07f6866a861f783?scale=6) |
+| ![jomo's 3d body](https://crafatar.com/renders/body/ae795aa86327408e92ab25c8a59f3ba1?scale=6) | ![Jake_0's 3d body](https://crafatar.com/renders/body/2d5aa9cdaeb049189930461fc9b91cc5?scale=6) | ![Notch's 3d body](https://crafatar.com/renders/body/069a79f444e94726a5befca90e38aaf5?scale=6) | ![sk89q's 3d body](https://crafatar.com/renders/body/0ea8eca3dbf647cc9d1ac64551ca975c?scale=6) | ![md_5's 3d body](https://crafatar.com/renders/body/af74a02d19cb445bb07f6866a861f783?scale=6) |
+| ![jomo's skin](https://crafatar.com/skins/ae795aa86327408e92ab25c8a59f3ba1) | ![Jake_0's skin](https://crafatar.com/skins/2d5aa9cdaeb049189930461fc9b91cc5) | ![Notch's skin](https://crafatar.com/skins/069a79f444e94726a5befca90e38aaf5) | ![sk89q's skin](https://crafatar.com/skins/0ea8eca3dbf647cc9d1ac64551ca975c) | ![md_5's skin](https://crafatar.com/skins/af74a02d19cb445bb07f6866a861f783) |
 
-## Commands
-```JS
-// Teleport current user to random location 
-Qubatch.player.teleport('random', null);
+## Usage / Documentation
 
-// Toggle rain
-Qubatch.render.setWeather('rain'); // rain|snow|clear
+Please [visit the website](https://crafatar.com) for details.
 
-// Set block at current player coordinates
-let pp = Qubatch.player.getBlockPos();
-Qubatch.world.chunkManager.setBlock(pp.x, pp.y, pp.z, {id: 10}, true);
+## Contact
 
-// Emulate user keyboard control
-// .walk(direction, duration_milliseconds)
-Qubatch.player.walk('forward', 2000); // forward|back|left|right
+* You can [follow](https://twitter.com/crafatar) us on twitter
+* Open an [issue](https://github.com/crafatar/crafatar/issues/) on GitHub
 
-// Get player rotate
-let rotate = Qubatch.player.rotate;
+# Installation
 
-// Set player rotate
-Qubatch.player.setRotate({x: 0, y: 0, z: 0});
+## Docker
 
-// Send message to chat
-Qubatch.player.chat.sendMessage('Hello, World!');
-
-// Get all supported blocks
-let blocks = Qubatch.world.block_manager.getAll();
-
-// Change game mode
-Qubatch.world.server.GameModeSet('creative'); // survival|creative|adventure|spectator
-
-// Open inventory window
-Qubatch.player.inventory.open();
-
-// Spawn mob
-Qubatch.player.chat.sendMessage('/spawnmob 3880 71 2527 horse creamy');
-Qubatch.player.chat.sendMessage('/spawnmob 3880 71 2527 bee base');
-
-// Play sounds
-Qubatch.sounds.play('madcraft:block.chicken', 'idle');
-Qubatch.sounds.play('madcraft:block.chicken', 'step');
-Qubatch.sounds.play('madcraft:block.chicken', 'death');
-Qubatch.sounds.play('madcraft:block.player', 'hit');
-
-// Admins
-// 1. admin list managed only by chat commands
-// 2. only owner or another admin can add new admin
-// 3. owner cannot be removed from admins
-/admin list
-/admin add username
-/admin remove username
+```sh
+docker network create crafatar
+docker run --net crafatar -d --name redis redis
+docker run --net crafatar -v crafatar-images:/crafatar/images -e REDIS_URL=redis://redis -p 3000:3000 crafatar/crafatar
 ```
 
-## Server packets
-Send particle animation from server to player:
-```JS
-const packets = [{
-    name: ServerClient.CMD_PARTICLE_BLOCK_DESTROY,
-    data: {
-        pos: {x: 100, y: 100, z: 100},
-        item: {id: 2}
-    }
-}];
-chunk.sendAll(packets, []);
-```
-## Manage server by chat commands
-- ### /gamerule doDaylightCycle false|true
-    You can stop the day and night shift with the command /gamerule doDaylightCycle false
-    To disable the day and night shift, you need to assign false to the rule
-    At this moment, the current position of the sun and moon will be "fixed".
-    Time will go on, but the change of day and night will freeze until you set the rule to true
+## Manual
 
-    **Note!**  
-    The command works only in worlds where the player has admin rights or he is its creator.  
-    If you need to stop the daylight time, and it's dark now, then before disabling the day and night shift, you first need to set the daylight time with the command /time set day
+- Install [nodejs](https://nodejs.org/) 12 (LTS)
+- Install `redis-server`
+- Run `npm install`  
+  If that fails, it's likely because because of `node-canvas` dependencies. Follow [this guide](https://github.com/Automattic/node-canvas/wiki#installation-guides) to install them.
+- Run `npm start`
 
-- ### /time set day|midnight|night|noon
-    You can change current world time by following commands
-    * `/time set  day` equal to 07:00
-    * `/time set  midnight` equal to 00
-    * `/time set  night` equal to 19:00
-    * `/time set  noon` equal to 12:00
+Crafatar is now available at http://0.0.0.0:3000.
 
-    You can set specific daytime `/time set 16500` it equal to 16:30.  
-    You can increase time by /add argument `/time add 1000`, this add one hour to current time.  
+## Configration / Environment variables
 
-    **Note!**  
-    The command works only in worlds where the player has admin rights or he is its creator.
+See the `config.js` file.
 
-- ### /vdist 2-16
-    You can change view distance by this command
-    * `/vdist 2` means 2 chunks showed around player
-    * `/vdist 16` means 16 chunks render around player
+# Operational notes
 
-    **Note!**  
-    View distance can take number from 2 to 16
+## inodes
 
-## Portals
-You can made 3 type of portals:
+Crafatar stores a lot of images on disk. For avatars, these are 8×8 px PNG images with an average file size of \~90 bytes. This can lead to issues on file systems such as ext4, which (by default) has a bytes-per-inode ratio of 16Kb. With thousands of files with an average file size below this ratio, you will run out of available inodes before running out of disk space. (Note that this will still be reported as `ENOSPC: no space left on device`).
 
-- ### Portal to bottom caves
-    - You must build a frame from OBSIDIAN (minimum size 4x5) and must activate the portal by applying FLINT_AND_STEEL to the inside of the frame;
-    - You cannot activate the portal if the bottom border is below -500 blocks.
+Consider using a different file system, changing the inode ratio, or deleting files before the inode limit is reached.
 
-- ### Portal to flying islands (aether)
-    - You must build a frame from GLOWSTONE (minimum size 4x5) and must activate the portal by applying FLINT_AND_STEEL to the inside of the frame;
-    - You cannot activate the portal if the bottom border is above 500 blocks.
+## disk space and memory usage
 
-- ### Portal to routine world (main level)
-    - You must build a frame from PRISMARINE (minimum size 4x5) and must activate the portal by applying FLINT_AND_STEEL to the inside of the frame;
-    - You cannot activate the portal if the bottom border is between 0 - 500 blocks.
+Eventually you will run out of disk space and/or redis will be out of memory. Make sure to delete image files and/or flush redis before this happens.
 
-## Generate particles from server
-```JS
-const actions = new WorldAction();
-// Where type can be one from [campfire_flame|explosion|music_note|torch_flame|...]
-actions.addParticles([{type: 'explosion', pos: vec_center}]);
+# Tests
+```sh
+npm test
 ```
 
-1. It is necessary to create an emitter, for example, as an explosion, it is disposable. The emitters are located in the `mesh/effect/emitter` folder
+If you want to debug failing tests:
+```sh
+# show logs during tests
+env VERBOSE_TEST=true npm test
+```
 
-2. Next, the emitter must be registered in `mesh/effect/manager.js` after line 32
-
-3. While the emitter method `canDelete()` returns true, it will exist and on each frame it will call the `emit()` method, which should return an array of generated particles, the answer may be an empty array, it will not affect anything, just this time no particles will be generated and the next frame will be called again the `emit()` method
-
-4. The emitter has a static variable `textures`, there you need to register an array of texture addresses from the file `./www/resource_packs/extend/textures/effects.png`
-
-5. For an example of creating a new emitter, see the `addExplosionParticles()` method in `./www/js/render.js`
-
-### Important:
-The explosion emitter is an example of a one-time emitter, it counts how many times the `emit()` method was called, and does not allow it to be done more than once, and its `canDelete()` method returns true if `emit()` was called at least once
-
-## Assignment of classes related to particles:
-1. `Mesh_Effect_Particle` - the basic particle of the effect with the implementation of physics
-2. `Mesh_Effect` - a mesh that consists of particles generated by emitters
-3. `Mesh_Effect_Manager` - Creates and destroys emitters, places particles generated by emitters in a mesh
-
-## Debug
-1. `F3` + `G` - toggle chunk borders OR by chat command `/chunkborders [true|false]`
-2. `F3` + `B` - toggle mobs borders OR by chat command `/mobborders [true|false]`
+It can be helpful to monitor redis commands to debug caching errors:
+```sh
+redis-cli monitor
+```

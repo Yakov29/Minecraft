@@ -1,1 +1,0 @@
-import '../www/js/light_worker.js'
